@@ -6,7 +6,8 @@ const Body = (props) => {
      const [count, setCount] = useState(1);
 
      const decrement =()=>{
-        setCount((count) => count - 1) ;
+         
+       ( count<=1 )? (count=1) : (setCount((count) => count - 1));
      }
 
      const increment =()=>{
